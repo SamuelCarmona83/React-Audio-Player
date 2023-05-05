@@ -127,9 +127,8 @@ function App() {
 
   const playerStyle = {
     display: "flex",
-    justifyContent: "space-around",
     width: "500px",
-    height: "175px",
+    height: "100px",
     backgroundColor: "beige",
   };
 
@@ -171,7 +170,11 @@ function App() {
               </a>
             )}
           </span>
-          <button onClick={() => player.current.play()}>▶</button>
+          <div>
+          </div>
+          <button style={{
+            marginLeft: 'auto'
+          }} onClick={() => player.current.play()}>▶</button>
           <button onClick={() => player.current.pause()}>⏸</button>
         </div>
       </div>
